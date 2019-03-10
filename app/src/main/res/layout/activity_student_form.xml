@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2ac237"
+    tools:context=".StudentForm">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#36dfd7">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Batch"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#e33"
+            />
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:entries="@array/batch"
+            android:textAlignment="center"
+            android:id="@+id/studentspinner">
+        </Spinner>
+
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/male"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/female"
+            />
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitstudent"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonbackground"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

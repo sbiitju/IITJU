@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/rsz_dsc_0457"
+            android:id="@+id/imageview"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/nameview"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:autoLink="phone"
+                android:textStyle="bold"
+                android:text="55"
+                android:textSize="20sp"
+                android:id="@+id/phoneview"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/emailview"
+                android:autoLink="email"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/tempview"
+                android:textSize="15sp"
+                android:autoLink="web"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
